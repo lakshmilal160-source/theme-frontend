@@ -1,0 +1,8 @@
+@extends('frontend.layouts.app')
+@section('title', 'About Themehaus')
+@section('content')
+<section class="container page-intro"><p class="eyebrow">A small studio, a clear point of view</p><h1>Good design.<br>A better beginning.</h1><p>Themehaus is an independent collection of thoughtfully crafted dashboard themes for teams with something worth building.</p></section>
+<section class="container about-split section"><div class="statement-card"><p class="eyebrow">Our principle</p><blockquote>Good defaults are not a shortcut. They’re a form of respect.</blockquote><span>How we think about every screen we make.</span></div><div><p class="eyebrow">Our point of view</p><h2>Make the useful feel considered.</h2><p>Product teams have enough blank canvases. We create working, responsive design systems that bring practical foundations and a distinctive point of view together.</p><p>Every detail earns its place: hierarchy, empty states, and the way a layout moves from wide to small screens.</p></div></section>
+<section class="soft-section"><div class="container section"><p class="eyebrow">What we believe</p><h2>The details are the difference.</h2><div class="values-grid"><article><h3>Clarity before cleverness.</h3><p>Make the next good decision feel obvious.</p></article><article><h3>Useful at every size.</h3><p>Responsive is a starting condition, not an extra.</p></article><article><h3>Foundations, not cages.</h3><p>Strong defaults with room to make it yours.</p></article></div></div></section>
+<section class="container cta"><div><h2>Bring us the product you’re shaping.</h2><p>We’d love to hear what the interface needs to do.</p></div><a class="button" href="{{ route('contact') }}">Start a conversation ↗</a></section>
+@endsection
