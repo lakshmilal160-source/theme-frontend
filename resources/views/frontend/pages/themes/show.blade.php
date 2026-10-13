@@ -3,7 +3,7 @@
 @section('content')
 <section class="container detail-page"><a class="back-link" href="{{ route('themes.index') }}">← All themes</a>
     <div class="detail-grid">
-        <div class="detail-preview">@include('partials.theme-preview', ['theme' => $theme])<div class="preview-caption">Dashboard concept · responsive layout</div>
+        <div class="detail-preview">@include('frontend.partials.theme-preview', ['theme' => $theme])<div class="preview-caption">Dashboard concept · responsive layout</div>
         </div>
         <aside class="detail-info">
             <p class="eyebrow">{{ $theme['category'] }}</p>
