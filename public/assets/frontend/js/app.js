@@ -1,2 +1,1 @@
-import 'bootstrap';
-import './themehaus.js';
+/* Bootstrap is loaded via bootstrap.bundle.min.js in the layout. */

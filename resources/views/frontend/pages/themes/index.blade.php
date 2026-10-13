@@ -20,7 +20,7 @@
             <option value="price-low" @selected(request('sort')==='price-low' )>Price: low to high</option>
         </select><button class="button button-outline">Apply filters</button></form>
     <p class="result-count">Showing {{ $themes->count() }} of {{ $themes->total() }} themes</p>
-    <div class="theme-grid">@forelse($themes as $theme)@include('partials.theme-card', ['theme' => $theme])@empty<div class="empty-state">
+    <div class="theme-grid">@forelse($themes as $theme)@include('frontend.partials.theme-card', ['theme' => $theme])@empty<div class="empty-state">
             <h2>No themes in this view.</h2>
             <p>Try another search or clear a filter to see more of the collection.</p><a class="button button-outline" href="{{ route('themes.index') }}">Clear filters</a>
         </div>@endforelse</div>
